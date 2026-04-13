@@ -44,6 +44,18 @@ pnpm dev
 
 ## Deployment
 
+### Vercel
+
+This starter's default `build` script runs `tinacms build && next build`, so Vercel must have the Tina Cloud environment variables available during the build.
+
+Add these in Vercel under `Project Settings -> Environment Variables`:
+
+- `NEXT_PUBLIC_TINA_CLIENT_ID`
+- `TINA_TOKEN`
+- `NEXT_PUBLIC_TINA_BRANCH` (optional if Vercel is already exposing the branch name correctly)
+
+If these are missing, the build fails with `Missing clientId, token`.
+
 ### GitHub Pages
 
 This starter can be deployed to GitHub Pages. A GitHub Actions workflow is included that handles the build and deployment process. 
@@ -109,4 +121,3 @@ Licensed under the [Apache 2.0 license](./LICENSE).
 
 # Repository cleaned of LFS content
 # Repository cleaned of LFS content - Wed Sep 17 15:00:42 AEST 2025
-
