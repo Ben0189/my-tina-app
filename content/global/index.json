@@ -1,11 +1,11 @@
 {
   "header": {
     "icon": {
-      "name": "Tina",
-      "color": "orange",
+      "name": "BiBookOpen",
+      "color": "blue",
       "style": "float"
     },
-    "name": "Tina Starter",
+    "name": "My Blog",
     "color": "default",
     "nav": [
       {
@@ -23,32 +23,7 @@
     ]
   },
   "footer": {
-    "social": [
-      {
-        "icon": {
-          "name": "FaLinkedin"
-        },
-        "url": "https://www.linkedin.com/company/tinacms"
-      },
-      {
-        "icon": {
-          "name": "FaGithub"
-        },
-        "url": "https://github.com/tinacms/tinacms"
-      },
-      {
-        "icon": {
-          "name": "FaYoutube"
-        },
-        "url": "https://www.youtube.com/@TinaCMS"
-      },
-      {
-        "icon": {
-          "name": "FaXTwitter"
-        },
-        "url": "https://x.com/TinaCMS"
-      }
-    ]
+    "social": []
   },
   "theme": {
     "color": "blue",

@@ -16,7 +16,6 @@ const nextConfig: NextConfig = {
     ],
   },
   async headers() {
-    // these are also defined in the root layout since github pages doesn't support headers
     const headers = [
       {
         key: 'X-Frame-Options',
@@ -31,14 +30,6 @@ const nextConfig: NextConfig = {
       {
         source: '/(.*)',
         headers,
-      },
-    ];
-  },
-  async rewrites() {
-    return [
-      {
-        source: '/admin',
-        destination: '/admin/index.html',
       },
     ];
   },
