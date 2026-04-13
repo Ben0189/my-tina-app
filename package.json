@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "build-local": "next build",
-    "start": "next start",
+    "dev": "tinacms dev -c \"next dev --turbopack\"",
+    "build": "tinacms build && next build",
+    "build-local": "tinacms build --local && next build",
+    "start": "tinacms build && next start",
     "export": "npm run build && next export",
     "lint": "biome lint",
-    "dev:build": "next build"
+    "dev:build": "tinacms build --local && next build"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
