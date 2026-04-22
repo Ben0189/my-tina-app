@@ -1,5 +1,6 @@
 import React from 'react';
 import { videoBlockSchema } from '@/components/blocks/video';
+import { ctaInlineTemplate } from '@/components/blocks/cta-inline';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import type { Collection } from 'tinacms';
 
@@ -179,6 +180,7 @@ const Post: Collection = {
           },
         },
         videoBlockSchema,
+        ctaInlineTemplate,
       ],
       isBody: true,
     },

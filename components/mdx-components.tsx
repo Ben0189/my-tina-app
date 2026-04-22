@@ -4,6 +4,7 @@ import { Components, TinaMarkdown, TinaMarkdownContent } from 'tinacms/dist/rich
 import Image from 'next/image';
 import { Prism } from 'tinacms/dist/rich-text/prism';
 import { Video } from './blocks/video';
+import { Cta } from './blocks/cta-inline';
 import { PageBlocksVideo } from '@/tina/__generated__/types';
 import { Mermaid } from './blocks/mermaid';
 
@@ -32,6 +33,7 @@ export const components: Components<{
     disclaimer?: TinaMarkdownContent;
   };
   video: PageBlocksVideo;
+  Cta: { text?: string };
 }> = {
   code_block: (props) => {
     if (!props) {
@@ -128,4 +130,5 @@ export const components: Components<{
   video: (props) => {
     return <Video data={props} />;
   },
+  Cta: (props) => <Cta {...props} />,
 };
